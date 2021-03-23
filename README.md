@@ -33,13 +33,6 @@ Once your database is created and seeded, exit the SQL CLI by typing "quit".
 
 Run "node server" or "npm start" to start the program.  You can view the site locally at "http://localhost:3001/"
   
-  ## Contributing
-
- Please reach out via email if you wish to contribute (see questions section below)
-  
-  ## Testing
-
-  No testing currently.
   
   ## License
 
