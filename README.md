@@ -25,7 +25,7 @@ To view the deployed application, [Click Here](http://.herokuapp.com/)
   
 You will first need to set up your tech-blog database.
 
-Open the SQL CLI by running "mysql -u root -p" and entering your password
+Open the SQL CLI by running "mysql -u root -p" and entering your password.
 Then run the command to create the database:
 "source db/schema.sql"
 
