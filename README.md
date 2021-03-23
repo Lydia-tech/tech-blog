@@ -19,7 +19,7 @@ To view the deployed application, [Click Here](http://.herokuapp.com/)
   
   ## Installation
 
-  If running application on your local device, ou will need Node.js to run this program.  After cloning the code to your local device, be sure to run "node npm install" to include essential npm packages.
+  If running application on your local device, you will need Node.js to run this program.  After cloning the code to your local device, be sure to run "node npm install" to include essential npm packages.
   
   ## Usage 
   

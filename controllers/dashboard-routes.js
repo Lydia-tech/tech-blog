@@ -21,7 +21,7 @@ router.get("/", withAuth, (req, res) => {
     ],
   })
   .then((dbPostData) => {
-      // This maps dbPostData, strips out each post and reduces it to the necessary info with get({ plain true}) then returns a new array called posts
+    
       const posts = dbPostData.map((post) => post.get({ plain: true }));
       res.render('dashboard', { posts, loggedIn: req.session.loggedIn });
   })
