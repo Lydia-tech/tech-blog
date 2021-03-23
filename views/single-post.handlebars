@@ -1,0 +1,13 @@
+{{> post-info post}}
+{{#if loggedIn}}
+{{> comment-form}}
+{{/if}}
+<ul>
+     {{#each comments as |comment|}}
+    <li>
+        {{> comments comment}}
+    </li>
+    {{/each}}
+</ul>
+
+<script src="/javascript/single-post.js"></script>

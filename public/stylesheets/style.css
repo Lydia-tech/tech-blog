@@ -1,0 +1,274 @@
+/*Styles*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --primary-color: #231010;
+    --secondary-color: #d9ead3;
+    --tertiary-color: #a7a7a7;
+  }
+  
+  body {
+    background-color: var(--secondary-color);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .secondary-text {
+    color: var(--secondary-color);
+  }
+  
+  .hide{
+    display: none;
+  }
+  
+  .display-message {
+    font-size: 1.5em;
+    color: var(--primary-color);
+    text-align: center;
+  }
+  
+  button:focus {
+    outline:0;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: var(--primary-color);
+    height: 9rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 1.5rem;
+    padding-left: 3rem;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    width: 22rem;
+    font-size: 1.2em;
+  }
+  
+  nav a {
+    color: var(--secondary-color);
+  }
+  
+  h1 {
+    width: 19rem;
+    font-size: 2.5em;
+    background-color: var(--secondary-color);
+    border-radius: 0.25rem;
+    text-align: center;
+    box-shadow: 4px 4px 0 var(--tertiary-color);
+    margin: 1.5rem 0;
+    padding: .05em 0;
+  }
+  
+  h1 a {
+    color: var(--primary-color);
+    margin: 0, auto;
+  }
+  
+  /*Main Styles*/
+  main {
+    padding: 1.5rem 2.75rem 2.75rem 2.75rem;
+    margin-bottom: 5rem;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  
+  /*Box Styles*/
+  .box {
+    border: solid 2px var(--primary-color);
+    margin-bottom: 2%;
+    max-width: 100%;
+  }
+  
+  .box:hover .highlight {
+    color: var(--secondary-color);
+  }
+  
+  .box-header {
+    background-color: var(--primary-color);
+    margin: -1px;
+    color: var(--tertiary-color);
+    padding: .75em;
+  }
+  
+  .box-title {
+    /* margin-left: .5em; */
+    font-size: 1.75em;
+  }
+  
+  .btn {
+    background-color: #666666;
+    color: var(--secondary-color);
+    border: none;
+    font-size: 1.5em;
+    padding: .75em;
+    border-radius: .25em;
+    width: 97%;
+    margin: .8em .8em 0 .8em; 
+  }
+  
+  /*Post Styles*/
+  .post-footer{
+    background-color: var(--primary-color);
+    margin: -1px;
+    color: var(--tertiary-color);
+    padding: .25em .75em;
+  }
+  
+  .post-body {
+    padding: 1em;
+    color: var(--primary-color);
+  }
+  
+  /* .post-body > p {
+    color: red;
+  
+  } */
+  
+  .post-info-wrapper {
+    
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+  /*Input Styles*/
+  .block {
+    display: block;
+  }
+  
+  label {
+    font-size: 1.75em;
+    margin: .5em .8em 0 .8em;
+  }
+  
+  .text-input {
+    border: none;
+    width: 97%;
+    height: 2em;
+    font-size: 1.75em;
+    margin: 0 auto;
+    box-sizing: inherit;
+    padding-left: .8em;
+  }
+  
+  .text-input:focus {
+    outline: none;
+  }
+  
+  .input-border {
+    border: solid 4px rgba(65, 128, 232, .75);
+    border-radius: .1em;
+  }
+  
+  #body-input, #comment-input {
+    height: 4em;
+  }
+  
+  /*Login Styles*/
+  #login-toggle {
+    color: #0809fe;
+    font-size: 1.5em;
+    margin: .5em .8em 1.5em .8em;
+    width: 15rem;
+    height: 2rem;
+    padding: 0 1em 1em 0;
+  }
+  
+  /*Dashboard Styles*/
+  .dashboard-post {
+    background-color: #666666;
+    margin-bottom: 2em;
+    border-radius: .5em;
+    color: #e1dfef;
+    padding: .75em;
+  }
+  
+  .post-date {
+    font-size: 1.75em;
+  }
+  
+  .comment-count {
+    font-size: 1.5em;
+    margin-top: .5em;
+  }
+  
+  .new-post-footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--secondary-color);
+  }
+  
+  .sticky-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: solid 2px var(--primary-color);
+    box-shadow: 0px -4px 3px rgba(35, 16, 16, 0.5);
+    padding: 2em 0;
+  }
+  
+  #new-post-btn {
+    background-color: var(--primary-color);
+    color:  #e1dfef;
+    border: none;
+    border-radius: .4em;
+    font-size: 1.75em;
+    padding: .5em .8em;
+  }
+  
+  
+  @media screen and (max-width: 768px){
+    .text-input {
+      width: 95%;
+    }
+  
+    .btn {
+      width: 95%;
+    }
+  }
+  
+  @media screen and (max-width: 540px){
+    .text-input {
+      width: 90%;
+    }
+  
+    .post-info-wrapper {
+      flex-direction: column;
+    }
+  
+    .btn {
+      width: 90%;
+      margin: .8em .5em 0 .5em;
+    }
+  
+    nav {
+      width: 15rem;
+      font-size: 1em;
+    }
+  
+    h1 {
+      font-size: 2em;
+      width: 8em;
+    }
+  }
